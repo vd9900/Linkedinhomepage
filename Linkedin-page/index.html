@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/LinkedIn logo.png">
+    <script src="https://kit.fontawesome.com/b6e54b3865.js" crossorigin="anonymous"></script>
+    <title>Linkedin</title>
+
+</head>
+
+<body>
+    <!-- this home page start -->
+    <!-- this navbar and header start -->
+    <header class="sticky-header">
+        <div class="left-header">
+            <img src="img/logo.png" alt="">
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="right-header">
+            <ul>
+                <li class="links-icons"><i class=" icon fa-solid fa-house"></i>Home</li>
+                <li class="links-icons"><i class=" icon fa-solid fa-circle-nodes"></i>My Network</li>
+                <li class="links-icons"><i class=" icon fa-solid fa-briefcase"></i>Jobs</li>
+                <li class="links-icons"><i class=" icon fa-solid fa-comment-dots"></i>Messaging</li>
+                <li class="links-icons"><i class=" icon fa-solid fa-bell"></i>Notefications</li>
+                <li class="links-icons"><i class=" icon fa-solid fa-circle-user"></i>Me</li>
+            </ul>
+            <div class="line-y"></div>
+            <div class="premium-user">
+                <i class=" icon fa-solid fa-address-card"></i>
+                <p>Try priemum</p>
+            </div>
+        </div>
+    </header>
+    <!-- this is the end of navbar header section -->
+    <!-- this body layout start -->
+    <main class="main-container">
+        <!-- This is the profile and recent activety section start -->
+        <div class="left-container">
+            <div class="profile-container">
+                <div class="p-c-1">
+                    <div class="banner-avater"></div>
+                    <div class="profile-photo"><img src="img/Profileimage.png" alt=""></div>
+                    <p>Welcome, Vinith!</p>
+                    <span>Add a photo</span>
+                </div>
+                <div class="p-c-2">
+                    <p>Connections <span id="num-connections">12</span></p>
+                    <span id="grow-network">Grow your network</span>
+                </div>
+                <div class="p-c-3">
+                    <P>Access exclusive tools & insights</P>
+                    <span><i class="fa-solid fa-square"></i>
+                        <p>Get Hired Faster, Try Premium Free</p>
+                    </span>
+                </div>
+                <div class="p-c-4">
+                    <i class="fa-solid fa-cube"></i>
+                    <p>My items</p>
+                </div>
+            </div>
+            <div class="recents-container">
+                <div class="all-recents">
+                    <span>Recent</span>
+                    <pre><i class="fa-solid fa-users"></i> Data Analytics Data Scientist</pre>
+                    <pre><i class="fa-solid fa-users"></i> JavaScript</pre>
+                    <pre><i class="fa-solid fa-users"></i> Frontend Developer and Web</pre>
+                    <span id="r-c-1">Groups</span>
+                    <pre><i class="fa-solid fa-users"></i> Data Analytics | Data scientist</pre>
+                    <pre><i class="fa-solid fa-users"></i> JavaScript</pre>
+                    <pre><i class="fa-solid fa-users"></i> Frontend Developer and Web </pre>
+                    <pre id="r-c-2">Show more<i class="fa-solid fa-chevron-down"></i></pre>
+                    <span id="r-c-3">Events<i class="fa-solid fa-plus"></i></span>
+                    <span id="r-c-4">Followed Hashtags</span>
+                </div>
+                <div id="r-c-5">Discover more</div>
+            </div>
+        </div>
+        <!-- This is the profile and recent activety section end -->
+        <!-- this is the  addpost and seepublic posts start -->
+        <div class="midele-container">
+            <div class="start-post">
+                <div class="l-p-1">
+                    <div class="min-profile"><img src="img/profileimage.png" alt=""></div>
+                    <input type="text" placeholder="Start a post">
+                </div>
+                <div class="l-p-2">
+                    <ul>
+                        <li><img src="" alt=""><i class="fa-regular fa-image" style="color:#0073b1;"></i>Photo</li>
+                        <li><img src="" alt=""><i class="fa-brands fa-youtube"
+                                style="color:rgb(64, 189, 64);"></i>Videos</li>
+                        <li><img src="" alt=""><i class="fa-regular fa-calendar-check"
+                                style="color: rgb(205, 102, 58);"></i>Events
+                        </li>
+                        <li><img src="" alt=""><i class="fa-regular fa-newspaper"
+                                style="color: rgb(228, 102, 112);"></i>Write article
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="line">
+                <span></span>
+                <div class="selected">
+                    Sort by: <select name="postlist" id="">
+                        <option value="recntly">Recent</option>
+                        <option value="toplist">Top</option>
+                    </select>
+                </div>
+            </div>
+            <div class="post1">
+                <span class="relative-response"><img src="img/minigoogle.png" alt=""> <b>Google</b> commented on this <i
+                        class="fa-solid fa-ellipsis"></i></span>
+                <div class="posted-user-banner posted1">
+                    <img src="img/Profile logo of yash.jpg" alt="">
+                    <div class="p-u-b-name">
+                        <p><b>Yash Sharma</b> 3rd+</p>
+                        <p>10 Million Followers</p>
+                        <p>Youtube channel</p>
+                    </div>
+                </div>
+                <p class="content-heading">Published new video on CSS Property Box model,this video will run through few
+                    more properties that up that make the <span class="seemore"> see more..</span></p>
+                <video width="540" height="auto" controls>
+                    <source src="img/demo.mp4" type="video/mp4">
+                </video>
+                <div class="posted-user-publiccommit posted2">
+                    <span>
+                        <span><img src="img/commit.png" alt="">
+                        </span>
+                        <span id="likes">112</span>
+                        <span id="other-respons">3 comments 23 shares</span>
+                    </span>
+                    <div class="posted-response posted1">
+                        <span><i class="fa-regular fa-thumbs-up"></i>Like</span>
+                        <span><i class="fa-regular fa-comments"></i>Comment</span>
+                        <span><i class="fa-solid fa-share"></i>share</span>
+                        <span><i class="fa-solid fa-paper-plane"></i>Send</span>
+                    </div>
+                    <div class="posted-commit-you">
+                        <div class="mini-profile"><img src="img/profileimage.png" alt=""></div>
+                        <div class="input-comment"> <input type="text" name="" id="" placeholder="Add a comment ...">
+                            <i class="fa-solid fa-face-smile-beam"></i>
+                            <i class="fa-regular fa-image"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post2">
+                <div class="posted-user-banner posted2">
+                    <img src="img/poster1.jpg" alt="">
+                    <div class="p-u-b-name">
+                        <p>freeCodeCamp</p>
+                        <p>845,086 followers</p>
+                        <p>7h ▪ <i class="fa-regular fa-globe"></i></p>
+                    </div>
+                </div>
+                <p class="content-heading">Buliding your own portfolio i to is a great way improve your front-end
+                    skills.
+                    React is one of the most used framework<span class="seemore">...see more</span></p>
+                <img src="img/post1.jpg" alt="" class="posts">
+                <div class="posted-user-commited posted1">
+                    <p>Create a Portfolio with React featureing Cool Animations </p>
+                    <span><a href="freecodecamp.org">freecodecamp.org</a> ▪ 1min read</span>
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div class="posted-user-publiccommit posted2">
+                    <span>
+                        <span><img src="img/commit.png" alt="">
+                        </span>
+                        <span id="likes">112</span>
+                        <span id="other-respons"> 3 comments 23 shares</span>
+                    </span>
+                    <div class="commit-sujestion posted2">
+                        <span>I wonder...</span>
+                        <span>Well said...</span>
+                        <span>Thanks for sharing...</span>
+                        <span>In my opinion...</span>
+                        <i></i>
+                    </div>
+                    <div class="posted-response posted1">
+                        <span><i class="fa-regular fa-thumbs-up"></i>Like</span>
+                        <span><i class="fa-regular fa-comments"></i>Comment</span>
+                        <span><i class="fa-solid fa-share"></i>share</span>
+                        <span><i class="fa-solid fa-paper-plane"></i>Send</span>
+                    </div>
+                    <div class="posted-commit-you">
+                        <div class="mini-profile"><img src="img/profileimage.png" alt=""></div>
+                        <div class="input-comment"> <input type="text" name="" id="" placeholder="Add a comment ...">
+                            <i class="fa-solid fa-face-smile-beam"></i>
+                            <i class="fa-regular fa-image"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- this is the  addpost and seepublic posts start -->
+        <!-- this is the news and footer options start -->
+        <div class="right-container">
+            <div class="news-container">
+                <p>Linkedin News</p>
+                <ul>
+                    <li>How generous are India's uber rich?
+                    </li>
+                    <span>1d ago</span>
+                    <li>US will take 100000 war refugees</li>
+                    <span>2h ago 1,234,434 readers</span>
+                    <li>What India cousumers are spending </li>
+                    <span>10h ago</span>
+                    <li>
+                        Common entrance for UG courses
+                    </li>
+                    <span>2d ago</span>
+                    <li>Create your own career luck</li>
+                    <span>6d ago</span>
+                </ul>
+                <span id="showmore">show more <i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="linkedin">
+                <div class="options-last">
+
+                    <div class="link-line-1 links">
+
+                        <span><a href="#">About</a></span>
+                        <span><a href="#">Accessibility</a></span>
+                        <span><a href="#">Help Center</a></span>
+                    </div>
+                    <div class="link-line-2 links">
+                        <span><a href="#">Privacy & terms <i class="fa-solid fa-chevron-down"></i></a></span>
+                        <span><a href="#">Add Choices</a></span>
+                    </div>
+                    <div class="link-line-3 links">
+                        <span><a href="#">Advertising </a></span>
+                        <span><a href="#">Bussiness Services <i class="fa-solid fa-chevron-down"></i></a></span>
+                    </div>
+                    <div class="link-line-4 links">
+                        <span><a href="#">Get the Linkedin app </a></span>
+                        <span><a href="#">more</a></span>
+                    </div>
+                </div>
+                <p class="footerline"><span>Linked</span> <img src="img/logo.png" alt=""> Linkedin coopertion © 2022</p>
+            </div>
+        </div>
+        <!-- this is the news and footer options start -->
+    </main>
+    <!-- this body layout end -->
+
+</body>
+
+</html>
