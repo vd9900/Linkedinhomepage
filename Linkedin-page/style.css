@@ -44,16 +44,16 @@ body{
     margin: 0 2px 0 0 ;
 }
 .search-bar{
-    width:280px;
+    width:auto;
     height:34px;
     background-color: #dfe2e4;
-    /* border:1px solid black; */
     border-radius: 4px;
     display: flex;
     align-items: center;
 
 }
 .search-bar input{
+    width:274px;
     outline: none;
     margin-left: 5px;
     background-color: transparent;
@@ -83,6 +83,9 @@ body{
     font-size: .8rem;
     cursor: pointer;
 }
+.mobile-icon i{
+    display: none ;
+}
 .right-header li,i:hover{
     color: var(--text-color2);
 }
@@ -104,23 +107,23 @@ body{
 }
 .main-container{
     display:grid;
-    grid-template-columns: 220px 490px 330px;
+    grid-template-columns: 230px 550px 330px;
     grid-template-rows: auto;
     justify-content: center;
+    margin-top: 25px;
 }
 .left-container{
     display:flex;
     flex-direction:column;
-    margin: 25px 25px 0 0;
+    margin: 0 25px 0 0;
     position: sticky;
     top: 0;
-    z-index:   ;
     
 }
 .profile-container{
     background-color: var(--container-color);
     box-shadow:var(--container-shadow);
-    height: 344px;
+    height: auto;
     border-radius: 10px;
 }
 .p-c-1{
@@ -135,8 +138,7 @@ body{
 .banner-avater{
     background:url(img/backavater.png);
     height: 58px;
-    border-radius: 10px 10px 0 0;
-    
+    border-radius: 10px 10px 0 0;   
     width:100%;
 }
 .profile-photo{
@@ -273,10 +275,12 @@ body{
     font-size: .9rem;
     color: var(--text-color1);
 }
+.to-mobile-showmore{
+   display: none;
+}
 .midele-container{
     display: flex;
     flex-direction: column;
-    margin-top: 25px;
 }
 .start-post{
     height: 116px;
@@ -403,7 +407,8 @@ body{
     border-bottom: .1px solid rgb(195, 191, 191);
 }
 #likes{
-   margin: 0 150px 0 0;
+    position: absolute;
+   margin: 0 0 0 100px;
 }
 .posted-user-publiccommit img{
     width:100px;
@@ -457,21 +462,25 @@ body{
 .input-comment{
     border: 1px solid black;
     border-radius: 25px;
-    width:450px;
+    width:auto;
+    height: 40px;
     display: flex;
     align-items: center;
+    margin: 0 18px 0 0;
     justify-content: space-evenly;
 }
 .input-comment input{
-    width: 385px;
-    padding-left: 18px;
-    height:24px ;
+    width:412px;
+    margin: 15px 0 15px 1px;
+    height:29px;
     outline: none;
+    padding-left: 10px;
+    border-radius: 10px;
 
 }
 .input-comment i{
     font-size: 20px;
-    margin: 0 5px 0 0;
+    margin: 0 6px 0 0;
     cursor: pointer;
 }
 .post2{
@@ -503,7 +512,7 @@ body{
 .right-container{
     display: flex;
     flex-direction: column;
-    margin: 26px;
+    margin: 0 26px 26px 26px;
 
 }
 .news-container{
@@ -595,24 +604,26 @@ color:var(--text-color1);
     margin-right: 4px;
 }
 
-@media (max-width:1330px) {
-    p{
-        color:red !important;
-    }
+@media (max-width:1330px)
+ {
     .right-header{
         margin: 5px 0 0 0;
     }
     
 }
-@media (max-width:1024px){
-    p{
-        color:green !important;
-    }
+@media (max-width:1024px)
+{
     html{
         font-size: 13.5px;
     }
+    .sticky-header{
+        justify-content: flex-start;
+    }
     .left-header{
-        margin:0 0 0 20px;
+        margin:0 0 0 25px;
+    }
+    .right-header{
+        margin: 0 -20px 0 0;
     }
 
     .main-container{
@@ -637,6 +648,82 @@ color:var(--text-color1);
     .right-container li{
         padding: 0;
     }
+    .posted-commit-you input{
+        width:308px;
+    }
+    .news-container li {
+        padding:10px 0 0 0;
+    }
   
     
+}
+@media(max-width:500px){
+    html{
+        font-size: 16px;
+    }
+    .sticky-header{
+    justify-content: flex-start;
+    height: 109px;
+}
+.left-header{
+    align-items: flex-start;
+}
+.search-bar{
+    background-color: transparent;
+}
+.search-bar input{
+    display: none;
+}
+.search-bar i{
+    font-size: 21px;
+    margin: 6px 0 0 15px;
+}
+.right-header span{
+ display: none;
+}
+.icon{
+    display: flex;
+    margin: 0 -1px 12px 0;
+}
+.mobile-icon i{
+    font-size: 25px;
+    display: inline;
+    margin: 0 15px 0 0;
+}
+.premium-user {
+    display: none;
+    border: none;
+
+}
+.main-container{
+    display: block;
+    margin-top:-25px;
+    width: auto;
+}
+.left-container .recents-container,.p-c-2,.p-c-3, .p-c-4{
+    display: none;
+}
+.left-container{
+    margin: 0;
+    position: static;
+}
+.to-mobile-showmore{
+    font-size:1.1rem ;
+    color: var(--text-color1);
+    display: flex;
+    justify-content: center;
+    height: 24px;
+    margin: 8px 0;
+    align-items: center;
+    cursor: pointer;
+}
+.midele-container{
+    margin: 0;
+}
+.right-container{
+    display: none;
+}
+
+
+
 }
