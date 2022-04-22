@@ -688,7 +688,6 @@ color:var(--text-color1);
 .mobile-icon i{
     font-size: 25px;
     display: inline;
-    margin: 0 15px 0 0;
 }
 .premium-user {
     display: none;
@@ -722,6 +721,7 @@ color:var(--text-color1);
 }
 .right-container{
     display: none;
+    margin: 0;
 }
 
 
